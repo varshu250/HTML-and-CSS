@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact | Varsha Choco World 🍫</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        .contact-page {
+            background-image: url('c4.jpeg');
+            background-size: cover;
+            background-position: center;
+            min-height: 100vh;
+            padding: 4rem 2rem;
+            color: white;
+            text-shadow: 1px 1px 4px #000;
+        }
+        
+        nav {
+            background-color: #4b2e2e;
+            padding: 1rem;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.1rem;
+            display: flex;
+            align-items: center;
+            transition: 0.3s ease;
+        }
+        
+        nav a:hover {
+            color: #ffcccb;
+        }
+        
+        nav i {
+            margin-right: 8px;
+        }
+        
+        h1 {
+            text-align: center;
+            font-size: 2.8rem;
+            margin-bottom: 2rem;
+        }
+        
+        .contact-container {
+            max-width: 800px;
+            margin: auto;
+            background-color: rgba(0, 0, 0, 0.6);
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+        }
+        
+        form {
+            display: grid;
+            gap: 1rem;
+        }
+        
+        label {
+            font-weight: bold;
+            font-size: 1.1rem;
+        }
+        
+        input,
+        textarea {
+            padding: 0.7rem;
+            font-size: 1rem;
+            border-radius: 6px;
+            border: none;
+        }
+        
+        textarea {
+            resize: vertical;
+        }
+        
+        button {
+            background-color: #ff7f50;
+            color: white;
+            padding: 0.8rem;
+            border: none;
+            border-radius: 6px;
+            font-size: 1.1rem;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        
+        button:hover {
+            background-color: #ff5722;
+        }
+        
+        .info-section {
+            margin-top: 2rem;
+            display: grid;
+            gap: 1rem;
+        }
+        
+        .info-box {
+            background-color: rgba(255, 255, 255, 0.1);
+            padding: 1rem;
+            border-radius: 10px;
+        }
+        
+        .info-box i {
+            margin-right: 10px;
+            color: #ffcccb;
+        }
+        
+        .back-home {
+            display: block;
+            text-align: center;
+            margin-top: 2rem;
+        }
+        
+        .back-home a {
+            background-color: #fff;
+            color: #4b2e2e;
+            padding: 0.8rem 1.5rem;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 25px;
+            transition: all 0.3s ease;
+        }
+        
+        .back-home a:hover {
+            background-color: #ffcccb;
+            color: #000;
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <a href="chocolate.html"><i class="fas fa-home"></i>Home</a>
+        <a href="services.html"><i class="fas fa-cogs"></i>Service</a>
+        <a href="about.html"><i class="fas fa-info-circle"></i>About</a>
+        <a href="contact.html"><i class="fas fa-envelope"></i>Contact</a>
+        <a href="#"><i class="fas fa-map-marker-alt"></i>Location</a>
+        <a href="product.html"><i class="fas fa-candy-cane"></i>Product</a>
+    </nav>
+    <div class="contact-page">
+        <h1>Contact Us 🍫</h1>
+        <div class="contact-container">
+            <form>
+                <label for="name"><i class="fas fa-user"></i> Name</label>
+                <input type="text" id="name" placeholder="Your full name" required>
+
+                <label for="email"><i class="fas fa-envelope"></i> Email</label>
+                <input type="email" id="email" placeholder="you@example.com" required>
+
+                <label for="mobile"><i class="fas fa-phone"></i> Mobile Number</label>
+                <input type="tel" id="mobile" placeholder="10-digit number" required>
+
+                <label for="dob"><i class="fas fa-calendar-alt"></i> Date of Birth</label>
+                <input type="date" id="dob" required>
+
+                <label for="address"><i class="fas fa-map-marker-alt"></i> Address</label>
+                <textarea id="address" rows="3" placeholder="Your address..." required></textarea>
+
+                <label for="message"><i class="fas fa-comment-dots"></i> Message</label>
+                <textarea id="message" rows="4" placeholder="Write something..."></textarea>
+
+                <button type="submit"><i class="fas fa-paper-plane"></i> Submit</button>
+            </form>
+
+            <div class="info-section">
+                <div class="info-box"><i class="fas fa-clock"></i> Timings: Mon-Sat | 10 AM - 8 PM</div>
+                <div class="info-box"><i class="fas fa-map-marker-alt"></i> Location: <a href="https://maps.google.com" target="_blank" style="color:#fff;text-decoration:underline;">Find us on Google Maps</a></div>
+                <div class="info-box"><i class="fab fa-instagram"></i> Instagram: <a href="https://instagram.com" target="_blank" style="color:#fff;text-decoration:underline;">@varsha_choco</a></div>
+                <div class="info-box"><i class="fab fa-facebook"></i> Facebook: <a href="https://facebook.com" target="_blank" style="color:#fff;text-decoration:underline;">Varsha Choco World</a></div>
+            </div>
+        </div>
+
+        <div class="back-home">
+            <a href="chocolate.html"><i class="fas fa-arrow-left"></i> Back to Home</a>
+        </div>
+    </div>
+    <footer style="background-color: #4b2e2e; color: white; padding: 2rem 1rem; text-align: center; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+        <h2 style="margin-bottom: 0.5rem;">Varsha Choco World 🍫</h2>
+        <p style="margin: 0.5rem 0;">Crafting Sweet Moments with Love ❤️</p>
+        <p style="margin: 0.5rem 0;">📍 123 Choco Lane, Cocoa City, Sweetland</p>
+        <p style="margin: 0.5rem 0;">📞 +91 98765 43210 | 📧 varshachoco@example.com</p>
+
+        <div style="margin: 1rem 0;">
+            <a href="chocolate.html" style="color: #ffcccb; margin: 0 1rem; text-decoration: none;">Home</a>
+            <a href="about.html" style="color: #ffcccb; margin: 0 1rem; text-decoration: none;">About</a>
+            <a href="contact.html" style="color: #ffcccb; margin: 0 1rem; text-decoration: none;">Contact</a>
+            <a href="product.html" style="color: #ffcccb; margin: 0 1rem; text-decoration: none;">Products</a>
+        </div>
+
+        <div style="font-size: 1.2rem; margin-top: 1rem;">
+            <a href="https://www.facebook.com/share/1ZBcqzvaPo/" style="color: white; margin: 0 10px;"><i class="fab fa-facebook-f"></i></a>
+            <a href="c:\Users\DELL\AppData\Local\Packages\5319275A.WhatsAppDesktop_cv1g1gvanyjgm\TempState\4B8FD3F079E7F86DE2EB88FF847EFFEE\WhatsApp Image 2025-04-21 at 11.56.43_7987bb0b.jpg" style="color: white; margin: 0 10px;"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/varsha-prasad-418262335?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" style="color: white; margin: 0 10px;"><i class="fab fa-linkedin"></i></a>
+            <a href="https://youtube.com/@beautyrangolidesigns4871?si=zj6QfMYrjWNV2lmM" style="color: white; margin: 0 10px;"><i class="fab fa-youtube"></i></a>
+        </div>
+
+        <p style="margin-top: 1.5rem; font-size: 0.9rem;">&copy; 2025 Varsha Choco World. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>

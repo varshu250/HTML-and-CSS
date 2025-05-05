@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Slider 🍫 - Varsha Choco World</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', sans-serif;
+            background-color: #fffaf5;
+        }
+        
+        nav {
+            background-color: #4b2e2e;
+            padding: 1rem;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.1rem;
+            display: flex;
+            align-items: center;
+            transition: 0.3s ease;
+        }
+        
+        nav a:hover {
+            color: #ffcccb;
+        }
+        
+        nav i {
+            margin-right: 8px;
+        }
+        
+        .slider-section {
+            background-image: url('c9.jpeg');
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .slider {
+            display: flex;
+            width: 1000%;
+            animation: slide 3s infinite ease-in-out;
+        }
+        
+        .slide {
+            min-width: 100%;
+            height: 100vh;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-size: cover;
+            background-position: center;
+        }
+        
+        .overlay-text {
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            color: #fff;
+            font-size: 2rem;
+            font-weight: bold;
+            background: rgba(0, 0, 0, 0.6);
+            padding: 0.6rem 2rem;
+            border-radius: 1rem;
+            text-align: center;
+        }
+        
+        .price-text {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background: rgba(255, 255, 255, 0.8);
+            padding: 10px 15px;
+            font-weight: bold;
+            color: #4b2e2e;
+            border-radius: 8px;
+            font-size: 1.2rem;
+        }
+        
+        @keyframes slide {
+            0% {
+                transform: translateX(0);
+            }
+            10% {
+                transform: translateX(0);
+            }
+            20% {
+                transform: translateX(-100%);
+            }
+            30% {
+                transform: translateX(-100%);
+            }
+            40% {
+                transform: translateX(-200%);
+            }
+            50% {
+                transform: translateX(-200%);
+            }
+            60% {
+                transform: translateX(-300%);
+            }
+            70% {
+                transform: translateX(-300%);
+            }
+            80% {
+                transform: translateX(-400%);
+            }
+            90% {
+                transform: translateX(-400%);
+            }
+            100% {
+                transform: translateX(0);
+            }
+        }
+        
+        .final-section {
+            background-image: url('c7.jpeg');
+            background-size: cover;
+            background-position: center;
+            height: 70vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+        
+        .final-message {
+            color: #fff;
+            font-size: 2rem;
+            font-weight: bold;
+            text-shadow: 2px 2px 10px #000;
+            background: brown(0, 0, 0, 0.5);
+            padding: 8rem;
+            border-radius: 20px;
+        }
+        
+        .back-to-home {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            background-color: #4b2e2e;
+            color: brown;
+            padding: 1rem;
+            border-radius: 1rem;
+            text-decoration: none;
+            z-index: 999;
+        }
+        
+        .back-to-home:hover {
+            background-color: #ffcccb;
+        }
+    </style>
+    <style>
+        /* Existing Styles */
+        /* Fade-in effect for scroll */
+        
+        .fade-in {
+            opacity: 0;
+            transition: opacity 3s ease;
+            text-align: center;
+        }
+        
+        .fade-in.visible {
+            opacity: 1;
+        }
+        
+        .image-size {
+            height: 300px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <a href="chocolate.html"><i class="fas fa-home"></i>Home</a>
+        <a href="services.html"><i class="fas fa-cogs"></i>Service</a>
+        <a href="about.html"><i class="fas fa-info-circle"></i>About</a>
+        <a href="contact.html"><i class="fas fa-envelope"></i>Contact</a>
+        <a href="https://maps.app.goo.gl/rgdCoM9bQ2JUqXCi6?g_st=a"><i class="fas fa-map-marker-alt"></i>Location</a>
+        <a href="product.html"><i class="fas fa-candy-cane"></i>Product</a>
+    </nav>
+
+    <div class="slider-section">
+        <div class="slider">
+            <div class="slide" style="background-image: url('c1.jpeg');">
+                <div class="price-text">₹120</div>
+                <div class="overlay-text">Sweet Bliss</div>
+            </div>
+            <div class="slide" style="background-image: url('c2.jpeg');">
+                <div class="price-text">₹150</div>
+                <div class="overlay-text">Choco Delight</div>
+            </div>
+            <div class="slide" style="background-image: url('c3.jpeg');">
+                <div class="price-text">₹130</div>
+                <div class="overlay-text">Fruit Frenzy</div>
+            </div>
+            <div class="slide" style="background-image: url('c4.jpeg');">
+                <div class="price-text">₹160</div>
+                <div class="overlay-text">Nutty Heaven</div>
+            </div>
+            <div class="slide" style="background-image: url('c5.jpeg');">
+                <div class="price-text">₹140</div>
+                <div class="overlay-text">Caramel Kiss</div>
+            </div>
+            <div class="slide" style="background-image: url('c6.jpeg');">
+                <div class="price-text">₹125</div>
+                <div class="overlay-text">White Dream</div>
+            </div>
+            <div class="slide" style="background-image: url('c7.jpeg');">
+                <div class="price-text">₹170</div>
+                <div class="overlay-text">Melted Magic</div>
+            </div>
+            <div class="slide" style="background-image: url('c8.jpeg');">
+                <div class="price-text">₹155</div>
+                <div class="overlay-text">Bubbly Treat</div>
+            </div>
+            <div class="slide" style="background-image: url('c9.jpeg');">
+                <div class="price-text">₹180</div>
+                <div class="overlay-text">Hazel Bliss</div>
+            </div>
+            <div class="slide" style="background-image: url('c10.jpeg');">
+                <div class="price-text">₹200</div>
+                <div class="overlay-text">Crunch King</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="final-section">
+        <div class="final-message">
+            🍫 Taste the magic, feel the love – only at Varsha Choco World! 💖
+        </div>
+    </div>
+    <!-- 📌 Extra Section Before Footer -->
+
+    <!-- Fun Fact Paragraph -->
+    <div style="background-color:#fffaf5; padding: 3rem 1rem; text-align:center; font-family:'Segoe UI',sans-serif;">
+        <h2 style="color:#4b2e2e;">🍫 Did You Know?</h2>
+        <p style="font-size:1.1rem; color:#333; max-width:800px; margin:1rem auto;">
+            The largest chocolate bar ever made weighed a whopping <strong>5,792.50 kg</strong> and was created in the UK in 2011! 😲 Imagine having that at Varsha Choco World! 🍫❤️
+        </p>
+    </div>
+
+    <!-- Testimonial Section -->
+    <div style="background-color:#fce8e6; padding: 3rem 1rem; text-align:center; font-family:'Segoe UI',sans-serif;">
+        <h2 style="color:#4b2e2e;">💖 What Our Fans Say</h2>
+        <p style="max-width:700px; margin:1rem auto; font-style:italic; font-size:1.1rem; color:#555;">
+            "Absolutely the best chocolates I've ever tasted! Every bite feels like a warm, cocoa-filled hug. Can't get enough of Varsha Choco World 🍫!" — <strong>Riya Sharma</strong>
+        </p>
+    </div>
+
+
+    <div style="display:flex; justify-content:center; gap:1rem; padding:3rem 1rem; background-color:#fffaf5;">
+        <img src="c2.jpeg" alt="Choco Pic 1" style="width:200px; border-radius:15px; box-shadow:0 4px 8px rgba(0,0,0,0.2);" class="fade-in">
+        <br>
+        <img src="c1.jpeg" alt="Choco Pic 2" style="width:200px; border-radius:15px; box-shadow:0 4px 8px rgba(0,0,0,0.2);" class="fade-in">
+        <br>
+        <img src="c3.jpeg" alt="Choco Pic 1" style="width:200px; border-radius:15px; box-shadow:0 4px 8px rgba(0,0,0,0.2);" class="fade-in">
+        <br>
+
+        <img src="c4.jpeg" alt="Choco Pic 2" style="width:200px; border-radius:15px; box-shadow:0 4px 8px rgba(0,0,0,0.2);" class="fade-in">
+        <br>
+        <img src="c5.jpeg" alt="Choco Pic 3" style="width:200px; border-radius:15px; box-shadow:0 4px 8px rgba(0,0,0,0.2);" class="fade-in">
+        <br>
+        <img src="c6.jpeg" alt="Choco Pic 3" style="width:200px; border-radius:15px; box-shadow:0 4px 8px rgba(0,0,0,0.2);" class="fade-in">
+    </div>
+
+    <!-- Fade-in Effect CSS -->
+    <style>
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: all 1.5s ease;
+        }
+        
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+
+    <!-- Fade-in Animation Script -->
+    <script>
+        window.addEventListener('scroll', () => {
+            document.querySelectorAll('.fade-in').forEach(el => {
+                const rect = el.getBoundingClientRect();
+                if (rect.top < window.innerHeight - 50) {
+                    el.classList.add('visible');
+                }
+            });
+        });
+    </script>
+
+
+
+
+
+
+
+
+    <!-- <a href="chocolate.html" class="back-to-home">Back to Home</a> -->
+    <footer style="background-color: #4b2e2e; color: white; padding: 2rem 1rem; text-align: center; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+        <h2 style="margin-bottom: 0.5rem;">Varsha Choco World 🍫</h2>
+        <p style="margin: 0.5rem 0;">Crafting Sweet Moments with Love ❤️</p>
+        <p style="margin: 0.5rem 0;">📍 123 Choco Lane, Cocoa City, Sweetland</p>
+        <p style="margin: 0.5rem 0;">📞 +91 98765 43210 | 📧 varshachoco@example.com</p>
+
+        <div style="margin: 1rem 0;">
+            <a href="chocolate.html" style="color: #ffcccb; margin: 0 1rem; text-decoration: none;">Home</a>
+            <a href="services.html" style="color: #ffcccb; margin: 0 1rem; text-decoration: none;">Services</a>
+            <a href="about.html" style="color: #ffcccb; margin: 0 1rem; text-decoration: none;">About</a>
+            <a href="contact.html" style="color: #ffcccb; margin: 0 1rem; text-decoration: none;">Contact</a>
+            <a href="product.html" style="color: #ffcccb; margin: 0 1rem; text-decoration: none;">Products</a>
+        </div>
+
+        <div style="font-size: 1.2rem; margin-top: 1rem;">
+            <a href="https://www.facebook.com/share/1ZBcqzvaPo/" style="color: white; margin: 0 10px;"><i class="fab fa-facebook-f"></i></a>
+            <a href="c:\Users\DELL\AppData\Local\Packages\5319275A.WhatsAppDesktop_cv1g1gvanyjgm\TempState\4B8FD3F079E7F86DE2EB88FF847EFFEE\WhatsApp Image 2025-04-21 at 11.56.43_7987bb0b.jpg" style="color: white; margin: 0 10px;"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/varsha-prasad-418262335?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" style="color: white; margin: 0 10px;"><i class="fab fa-linkedin"></i></a>
+            <a href="https://youtube.com/@beautyrangolidesigns4871?si=zj6QfMYrjWNV2lmM" style="color: white; margin: 0 10px;"><i class="fab fa-youtube"></i></a>
+        </div>
+
+        <p style="margin-top: 1.5rem; font-size: 0.9rem;">&copy; 2025 Varsha Choco World. All rights reserved.</p>
+    </footer>
+
+</body>
+
+</html>
+
+</html>
+
+</html>
+
+</html>
+
+</html>
